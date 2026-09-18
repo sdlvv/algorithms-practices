@@ -1,0 +1,18 @@
+# Скомпилированные исполняемые файлы
+*.exe
+*.out
+*.app
+
+# Папки сборки CMake и компилятора
+cmake-build-*/
+build/
+bin/
+obj/
+
+# Служебные файлы CLion / JetBrains
+.idea/
+*.user
+
+# Системный мусор Windows
+Thumbs.db
+desktop.ini
