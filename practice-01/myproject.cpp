@@ -18,6 +18,7 @@ int main() {
     std::string courseName; // название курса
     std::string direction; // направление
     std::string technologies; // стек технологий
+    char format; // формат обучения: 'О' - онлайн, 'F' - оффлайн
     double pricePerMonth; // цена за месяц
     int durationMonths; // длительность курса
     int availableSeats; // количество допустных мест
@@ -32,6 +33,11 @@ int main() {
 
     std::cout << "Введите технологии: ";
     std::getline(std::cin, technologies);
+
+    std::cout << "Выберите формат обучения ('O' - онлайн, 'F' - оффлайн):";
+    std::cin >> format;
+
+    std::string formatName = (format == 'O' || format == 'F') ? "Онлайн" : "Оффлайн";
 
     std::cout << "Введите стоимость за месяц (руб): ";
     std::cin >> pricePerMonth;
@@ -55,6 +61,7 @@ int main() {
     std::cout << "Название:          " << courseName << std::endl;
     std::cout << "Направление:       " << direction << std::endl;
     std::cout << "Технологии:        " << technologies << std::endl;
+    std::cout << "Формат обучения:   " << formatName << std::endl;
     std::cout << "Длительность:      " << durationMonths << " мес." << std::endl;
     std::cout << "Цена за месяц:     " << pricePerMonth << " руб." << std::endl;
     std::cout << "Скидка (10%):      " << discount << " руб." << std::endl;
