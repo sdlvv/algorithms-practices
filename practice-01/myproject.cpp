@@ -21,7 +21,7 @@ int main() {
     double pricePerMonth; // цена за месяц
     int durationMonths; // длительность курса
     int availableSeats; // количество допустных мест
-    bool isRecruiting;
+    bool isRecruiting; // набор
 
     // ввод данных
     std::cout << "Введите название курса: ";
@@ -45,7 +45,7 @@ int main() {
     isRecruiting = (availableSeats > 0);
 
     // вычисления
-    double discount = pricePerMonth * 0.1; // Скидка 10%
+    double discount = pricePerMonth * 0.1; // скидка 10%
     double finalMonthlyPrice = pricePerMonth - discount;
     double totalCost = finalMonthlyPrice * durationMonths;
 
