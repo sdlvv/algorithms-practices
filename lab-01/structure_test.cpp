@@ -1,6 +1,6 @@
 #include <iostream>
 
 int main() {
-    cout << "Hello"; 
+    std::cout << "Hello"; // первое решение: добавить префикс std:: перед оператором cout
     return 0;
 }
