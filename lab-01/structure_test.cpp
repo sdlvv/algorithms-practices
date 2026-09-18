@@ -1,6 +1,6 @@
 #include <iostream>
-
+using namespace std; // второй способ - добавить пространство имен std перед функцией main
 int main() {
-    std::cout << "Hello"; // первое решение: добавить префикс std:: перед оператором cout
+    cout << "Hello";
     return 0;
 }
