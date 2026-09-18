@@ -31,6 +31,8 @@ int main() {
     std::cout << "Год рождения: " << birthYear << std::endl;
     std::cout << "Текущий год: " << CURRENT_YEAR << std::endl;
     std::cout << "Ваш возраст: " << age << " лет" << std::endl;
+    std::cout << "Ваш возраст в месяцах: " << age*12 << " месяца(-ев)" << std::endl;
+    std::cout << "Ваш возраст в днях: " << age*365 << " дня(-ей)" << std::endl;
     std::cout << std::endl;
 
     std::cout << "Совершеннолетний: " << (isAdult ? "Да" : "Нет") << std::endl;
