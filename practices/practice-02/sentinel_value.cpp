@@ -3,15 +3,12 @@
 // (2) Ввод чисел до нуля с подсчётом количества, суммы и среднего.
 
 #include <iostream>
-#ifdef _WIN32
-#include <windows.h>
-#endif
+#include <locale>
 
 int main() {
-#ifdef _WIN32
-    SetConsoleCP(65001);
-    SetConsoleOutputCP(65001);
-#endif
+    std::locale::global(std::locale("en_US.UTF-8"));
+    std::cin.imbue(std::locale());
+    std::cout.imbue(std::locale());
 
     int value;
     int count = 0;
