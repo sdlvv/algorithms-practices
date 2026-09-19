@@ -16,7 +16,7 @@ int main() {
     int first;
     std::cout << "Введите числа (0 - для завершения)" << '\n';
 
-    if (!(std::cin >> first) || first == 0) {
+    if (!(std::cin >> first) || first == 0) { // '!' - задает приоритет (std::cin >> first) выполнения
         std::cout << "Последовательность пуста." << '\n';
         return 0;
     }
