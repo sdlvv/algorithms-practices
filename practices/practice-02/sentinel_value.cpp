@@ -30,6 +30,7 @@ int main() {
         return 0;
     }
 
+    // принудительно переводим тип long long (sum) в double, чтобы среднее арифметическое было точнее
     double average = static_cast<double>(sum) / count;
 
     std::cout << "Количество " <<  count << '\n';
