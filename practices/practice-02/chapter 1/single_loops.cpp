@@ -1,3 +1,7 @@
+
+//  Часть 1.
+// (1) Сумма и произведение чисел от 1 до n
+
 #include <iostream>
 #ifdef _WIN32
 #include <windows.h>
