@@ -32,7 +32,7 @@ int main() {
 
         if (guess == secret) {
             std::cout << "Угадал!" << std::endl;
-            std::cout << "Загаданное число: " << guess << std::endl;
+            std::cout << "Загаданное число: " << secret << std::endl;
             std::cout << "Количество попыток: " << attempts << std::endl;
         }
         ++attempts;
