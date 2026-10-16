@@ -21,6 +21,9 @@ int main() {
             break;
         }
     }
+    if (first_found != -1) {
+        std::cout << "Первое число, кратное " << divisor << ": " << first_found << "\n\n";
+    }
    // вывести только нечетные числа из [1; 15], пропуская четные.
     std::cout << "--- continue ---\n";
     std::cout << "Нечетные числа: ";
@@ -29,7 +32,7 @@ int main() {
         if (i % 2 == 0) {
             continue;
         }
-        std::cout << " ";
+        std::cout << i << " ";
     }
     std::cout << "\n\n";
 
