@@ -16,20 +16,23 @@ int main () {
     char black = ' ';
     char white = ' ';
 
+    std::cout << "Введите символ для черных: \n";
     std::cin >> black;
-    std::cout << "Введите символ для черных: \n"; std::cin >> black;
 
+    std::cout << "Введите символ для белых: \n";
     std::cin >> white;
-    std::cout << "Введите символ для белых: \n"; std::cin >> white;
 
     for (int i = 1; i <= 8; ++i) {
         for (int j = 1; j <= 8; ++j) {
 
+
+        if ((i + j) % 2 == 0) {
+            std::cout << black << " ";
+        } else {
+            std::cout << white << " ";
         }
+        }
+        std::cout << "\n";
     }
-    if ((i + j) % 2 == 0) {
-        std::cout << black << " ";
-    } else {
-        std::cout << white << " ";
-    }
+    return 0;
 }
