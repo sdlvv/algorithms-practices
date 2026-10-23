@@ -18,7 +18,7 @@ int main() {
 
     std::cout << "Таблица умножения для числа " << n << ":" << std::endl;
     for (int i = 1; i <= 10; i++) {
-        std::cout << n << " * " << i << " = " << i << std::endl;
+        std::cout << n << " * " << i << " = " << n*i << std::endl;
     }
     return 0;
 }
