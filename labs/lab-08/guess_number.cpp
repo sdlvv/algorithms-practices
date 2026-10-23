@@ -14,7 +14,7 @@ int main() {
 
     srand(time(0));  // инициализация генератора случайных чисел
     int secret = rand() % 100 + 1;  // число от 1 до 100
-    int guess;
+    int guess = 0;
     int attempts = 0;
 
     std::cout << "=== УГАДАЙ ЧИСЛО ===" << std::endl;
@@ -23,6 +23,7 @@ int main() {
 
     while (guess != secret) {
         std::cin >> guess;
+        ++attempts;
 
         if (guess > secret) {
             std::cout << "Меньше!" << std::endl;
@@ -35,7 +36,6 @@ int main() {
             std::cout << "Загаданное число: " << secret << std::endl;
             std::cout << "Количество попыток: " << attempts << std::endl;
         }
-        ++attempts;
     }
 
     return 0;
