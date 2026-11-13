@@ -1,0 +1,21 @@
+Код для перевода консоли на кириллицу для Windows
+
+
+
+
+
+#include <iostream>
+#include <string>
+#include <iomanip>
+
+#ifdef _WIN32
+#include <windows.h>
+#endif
+
+int main() {
+#ifdef _WIN32
+    SetConsoleCP(65001);
+    SetConsoleOutputCP(65001);
+#endif
+
+}
