@@ -81,7 +81,7 @@ int findFirstAboveAverage(const int arr[], int size, double average) {
     return -1; // страховка на случай, если все значения элементов равны и среднего нет - сигнальный код ошибки
 }
 
-// дополнительно: количество нечетных чисел
+// дополнительно: количество четных чисел
 int countEven(const int arr[], int size) {
     int evenCount = 0;
     for (int i = 0; i < size; i++) {
