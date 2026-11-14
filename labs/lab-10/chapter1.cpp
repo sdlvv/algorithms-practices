@@ -118,9 +118,7 @@ int main() {
 
     int pos = 0, neg = 0, zero = 0;
     countSigns(numbers, SIZE, pos, neg, zero);
-    std::cout << "Положительных: " << pos
-              << ", отрицательных: " << neg
-              << ", нулей: " << zero << '\n';
+    std::cout << "Положительных: " << pos << ", отрицательных: " << neg << ", нулей: " << zero << '\n';
 
     int idx = findFirstAboveAverage(numbers, SIZE, average);
     if (idx != -1) {
