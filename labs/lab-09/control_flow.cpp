@@ -42,8 +42,11 @@ int main() {
                     break;
                 }
 
-                for (int i = 1; i <= n; ++i) {
+                int i = 1;
+
+                while (i <= n) {
                     std::cout << "\n--- Сеанс #" << i << " ---" << std::endl;
+                    ++i;
 
                     // 1. Валидация категории бронирования через do-while
                     int sessionType;
@@ -58,8 +61,9 @@ int main() {
                     // 2. Ввод принадлежности к команде
                     std::string teamName;
                     if (sessionType == 1) {
-                        std::cout << "Введите название команды: ";
-                        std::cin >> teamName;
+                        std::cout << "Введите название команды: \n";
+                        std::cin.ignore();
+                        std::getline(std::cin, teamName);
                     } else {
                         teamName = "Массовый прокат";
                     }
